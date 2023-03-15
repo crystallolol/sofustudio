@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+span {
+    color: pink;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* ***************************************** */
+/* nav styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    color: grey;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+header a:hover {
+    color: lightgray;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+#nav li {
+    list-style: none;
+    display: inline-block;
+    padding:0px 5px;
+}
+
+#nav li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 80%;
+    padding-left: 15px;
+}
+
+#nav li a:hover {
+    color:lightgray;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    margin-right: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: grey;
+}
+
+/* ***************************************** */
+/* about section styles */
+
+#about {
+    height:100vh;
+    background-image: url(images/home_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-content {
+    color:white;
+    align-items:center;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.about-content h1,p {
+    font-weight: bold;
+}
+
+.about-content h1,p {
+    padding-bottom:15px;
+}
+
+.button {
+    border: 1px white solid;
+    background-color: transparent;
+    align-items: center;
+    border-color: white;
+    color:white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 60%;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button a:hover {
+    text-decoration: none;
+    color:lightgray;
+}
+
+/* ***************************************** */
+/* homepage portfolio section styles */
+#portfolio {
+    background-color:#F9F7F5;
+}
+
+.section-title {
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    color:grey;
+    font-weight: 700;
+}
+
+.portfolio-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.gallery {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    align-items: center;
+    text-align: center;
+  }
+
+.gallery img{
+    max-width: 350px;
+    min-width:200px;
+    width:100%;
+    height:auto;
+}
+
+.desc {
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: gray;
+  }
+
+.grey_button {
+    border: 1px grey solid;
+    background-color: transparent;
+    align-items: center;
+    border-color: grey;
+    color:grey;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 70%;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*************** Ship Page style *****************/
+
+#ship_banner {
+    height:60vh;
+    background-image: url(images/11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+table {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    width: 70%;
+    min-width:fit-content;
+}
+
+table, th, td {
+    border:1px solid grey;
+    padding: 8px;
+    text-align:center;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: lightgray;
+    color: white;
+}
+
+
+
+
+/* ***************************************** */
+/* footer styles */
+
+footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 70%;
+    color: white;
+    background-color:grey ;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_left {
+    text-align: left;
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+.footer_left li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.footer_right li {
+    display: inline-block;
+    color:white;
+    padding: 0 10px 10px 0;
+    font-size: 150%;
+}
+
+
+/* ***************************************** */
+/* shop page styles */
+
+#shop_banner {
+    height:60vh;
+    background-image: url(images/shop_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height:max-content;
+}
+
+.shop-content {
+    color:white;
+    align-items:center;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.portfolio-shop {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding-top:30px;
+}
+
+.shop_gallery {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    align-items: center;
+    text-align: center;
+  }
+
+.shop_gallery img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.price{
+    color:grey;
+    font-size: 80%;
+}
+
+.shop_gallery img:hover {
+    transform: scale(1.08);
+  }
+
+/* ***************************************** */
+/* about page styles */
+
+#about_page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#about_page p {
+    padding: 20px;
+    max-width: 700px;
+    text-align: left;
+    font-weight: 400;
+    margin: auto;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/************ contact page style ******************/
+
+#contact_banner {
+    height:60vh;
+    background-image: url(images/contact_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height:fit-content;
+}
+
+#contact-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+form {
+    max-width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+label {
+    line-height: 2;
+    color:grey;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin:auto;
+  }
+  
+  input[type=submit] {
+    background-color: lightgrey ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 70%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #777;
+  }
+
+
+/*** Mobile Version **/
+
+@media (min-width: 320px) and (max-width: 768px)  {
+
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity:0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    #nav {
+        background-color:white;
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        text-align: center;
+        display: none;
+    }
+
+    #nav a:link,  
+    #nav a:visited,
+    #nav a:active {
+        margin: 12px 0;
+        display: block;
+        text-align: center;
+    }
+    
+    #nav.active {
+        display: block;
+    }
+
+    .portfolio-content{
+        display: block;
+    }    
+
+
+}
